@@ -4,7 +4,7 @@
 
 from telebot import TeleBot, types
 
-bot= TeleBot(token='Впиши сюда свой токен', parse_mode='html') # создание бота
+bot= TeleBot(token='5528601626:AAFRsotyuT0qZ-YYtB_9eECx71O5aEDkEpA', parse_mode='html') # создание бота
 
 # объект клавиаутры
 keybaord = types.ReplyKeyboardMarkup(one_time_keyboard=True)
@@ -69,7 +69,7 @@ def send_z (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     z=message.text
-    admin_id= # айди админа - число
+    admin_id=266007058
     app_text=[]
     app_name=[]
     app_username=[]
@@ -95,7 +95,7 @@ def send_d (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     d=message.text
-    admin_id= # айди админа - число
+    admin_id=266007058
     app_text=[]
     app_name=[]
     app_username=[]
@@ -121,7 +121,7 @@ def send_p (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     p=message.text
-    admin_id= # айди админа - число
+    admin_id=266007058
     app_text=[]
     app_name=[]
     app_username=[]
@@ -140,14 +140,14 @@ def send_p (message):
     app_name.clear()
     app_username.clear()
     app_text.clear()
-    bot.send_message(chat_id, text='Мы увидели, что ты в поиске работы. Наставники и ребята в чатике всегда ответят на любой твой вопрос и помогут🧠')
+    bot.send_message(chat_id, text='Мы увидели, что ты в поиске работы. Герман, наставники и ребята в чатике всегда ответят на любой твой вопрос и помогут🧠')
 
 def send_f (message):
     first_name=message.chat.first_name
     chat_id=message.chat.id
     user_name=message.from_user.username 
     f=message.text
-    admin_id= # айди админа - число
+    admin_id=266007058
     app_text=[]
     app_name=[]
     app_username=[]
