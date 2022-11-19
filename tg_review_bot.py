@@ -4,7 +4,7 @@
 
 from telebot import TeleBot, types
 
-bot= TeleBot(token='5528601626:AAFRsotyuT0qZ-YYtB_9eECx71O5aEDkEpA', parse_mode='html') # создание бота
+bot= TeleBot(token='Вставьте свой токен', parse_mode='html') # создание бота
 
 # объект клавиаутры
 keybaord = types.ReplyKeyboardMarkup(one_time_keyboard=True)
@@ -69,7 +69,7 @@ def send_z (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     z=message.text
-    admin_id=266007058
+    admin_id= # пишем айди админа
     app_text=[]
     app_name=[]
     app_username=[]
@@ -95,7 +95,7 @@ def send_d (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     d=message.text
-    admin_id=266007058
+    admin_id=# пишем айди админа
     app_text=[]
     app_name=[]
     app_username=[]
@@ -121,7 +121,7 @@ def send_p (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     p=message.text
-    admin_id=266007058
+    admin_id=# пишем айди админа
     app_text=[]
     app_name=[]
     app_username=[]
@@ -147,7 +147,7 @@ def send_f (message):
     chat_id=message.chat.id
     user_name=message.from_user.username 
     f=message.text
-    admin_id=266007058
+    admin_id=# пишем айди админа
     app_text=[]
     app_name=[]
     app_username=[]
