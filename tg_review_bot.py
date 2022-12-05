@@ -37,11 +37,11 @@ def message_handler(message: types.Message):
     # проверяем текст сообщения на совпадение с текстом какой либо из кнопок
     # в зависимости от выбора, приходит сообщение
     if message.text == 'Да':
-        bot.send_message(message.chat.id, text="Круто🔥 Напиши в ответном сообщении вой отзыв, какой у тебя офер и как все прошло? И не забудь похвалить ментора😊")
+        bot.send_message(message.chat.id, text="Круто🔥 Напиши в ответном сообщении свой отзыв и как все прошло?")
         bot.register_next_step_handler(message, send_z)
     
     elif message.text == 'Нет':
-        bot.send_message(message.chat.id, text="Напиши в одном сообщении, кто был твоим ментором и сколько собесов было?")
+        bot.send_message(message.chat.id, text="Напиши в одном сообщении, кто был твоим ментором?")
         bot.register_next_step_handler(message, send_d)
     
     elif message.text == 'В поиске':
@@ -56,7 +56,7 @@ def message_handler(message: types.Message):
         # выводим ошибку
         bot.send_message(
             chat_id=message.chat.id,
-            text='Не понимаю тебя. Тебе поможет КИТ @cto_takoe_escapada 🐋',
+            text='Не понимаю тебя. Тебе поможет КИТ @никнейм 🐋',
         )
 
 
@@ -79,7 +79,7 @@ def send_z (message):
     
     bot.send_message(admin_id, message.text)
 
-    bot.send_message(admin_id, f'---> Еще один офер! Пришел новый отзыв от @{app_username[0]}')
+    bot.send_message(admin_id, f'---> Класс! Пришел новый позитивный отзыв от @{app_username[0]}')
 
     img_z = open('img_z.jpg', 'rb')
     bot.send_photo(message.chat.id, img_z)
@@ -87,7 +87,7 @@ def send_z (message):
     app_name.clear()
     app_username.clear()
     app_text.clear()
-    bot.send_message(chat_id, text='Спасибо💛 Твой отзыв уже у нас, и скоро его прочитает Герман')
+    bot.send_message(chat_id, text='Спасибо💛 Твой отзыв уже у нас, и скоро его прочитает Админ')
 
 
 def send_d (message):
@@ -132,7 +132,7 @@ def send_p (message):
     
     bot.send_message(admin_id, message.text)
 
-    bot.send_message(admin_id, f'---> Пришел новый отзыв! @{app_username[0]} - Еще в поиске работы')
+    bot.send_message(admin_id, f'---> Пришел новый отзыв! @{app_username[0]} - Еще проходит курс')
     
     img_p = open('img_p.jpg', 'rb')
     bot.send_photo(message.chat.id, img_p)
@@ -140,7 +140,7 @@ def send_p (message):
     app_name.clear()
     app_username.clear()
     app_text.clear()
-    bot.send_message(chat_id, text='Мы увидели, что ты в поиске работы. Герман, наставники и ребята в чатике всегда ответят на любой твой вопрос и помогут🧠')
+    bot.send_message(chat_id, text='Мы увидели, что ты еще проходишь курс.Наставники и ребята в чатике всегда ответят на любой твой вопрос и помогут🧠')
 
 def send_f (message):
     first_name=message.chat.first_name
@@ -166,7 +166,7 @@ def send_f (message):
     app_name.clear()
     app_username.clear()
     app_text.clear()
-    bot.send_message(chat_id, text='Рады, что ты у нас на курсе💛 Уже отправили твой отзыв Герману 😊')
+    bot.send_message(chat_id, text='Рады, что ты у нас на курсе💛 Уже читаем твой отзыв 😊')
 
 
 
